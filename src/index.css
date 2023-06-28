@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 .active{
-  color: rgb(62, 11, 203);
+  color: rgb(11, 203, 69);
   background-color: transparent;
   text-decoration: underline;
   
+}
+
+.bg-btn{
+  @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
 }
 
 

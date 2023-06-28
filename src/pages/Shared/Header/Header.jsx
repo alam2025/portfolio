@@ -22,9 +22,9 @@ function Header() {
             <>
                   <div className="drawer ">
                         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-                        <div className="drawer-content flex flex-col">
+                        <div className="drawer-content flex  flex-col">
                               {/* Navbar */}
-                              <div className="w-full navbar bg-white overflow-y-scroll fixed z-10">
+                              <div className="w-full navbar bg-gradient-to-b   bg-black text-white py-6 shadow-xl  fixed z-10 md:px-[100px]">
                                     <div className="flex-1 px-2 text-2xl font-semibold mx-2">Alam Hossain</div>
                                     <div className="flex-none lg:hidden">
                                           <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
@@ -33,7 +33,7 @@ function Header() {
                                     </div>
 
                                     <div className="flex-none hidden lg:block">
-                                          <ul className="menu menu-horizontal">
+                                          <ul className="menu  menu-horizontal">
                                                 {/* Navbar menu content here */}
                                                 {navList}
                                           </ul>

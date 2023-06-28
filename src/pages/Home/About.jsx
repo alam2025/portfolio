@@ -12,14 +12,14 @@ const About = () => {
             link.click();
       }
       return (
-            <div id='about' className=' mt-24 mb-20'>
+            <div id='about' className=' w-[80%] mx-auto mt-24 mb-20'>
                   {/* <div >
                         <h1 className=' text-6xl opacity-20'>ABOUT ME</h1>
                         <h3 className=' font-extrabold'>Know Me About</h3>
                   </div> */}
                   <TextOverlay overlayText={'Know Me More'} backgoundText={'About Me'}></TextOverlay>
 
-                  <section className=' mt-20 flex px-10 gap-10 md:flex-row flex-col'>
+                  <section className=' mt-20 flex  gap-10 md:flex-row flex-col'>
                         <div className=' md:w-[60%]'>
                               <Fade left duration={2000}>
                                     <h1 className='text-3xl mb-4'>I'm <span className=' text-green-400'>Alam Hossain</span>, a Web Developer</h1>

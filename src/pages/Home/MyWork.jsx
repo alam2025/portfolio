@@ -3,7 +3,7 @@ import TextOverlay from '../../componets/TextOverlay';
 
 const MyWork = () => {
       return (
-            <div>
+            <div className=' '>
                   <TextOverlay overlayText={'My Work'} backgoundText={'Portfolio'}></TextOverlay>
             </div>
       );

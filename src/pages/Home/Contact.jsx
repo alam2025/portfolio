@@ -17,7 +17,7 @@ const Contact = () => {
       };
 
       return (
-            <div className="bg-base-200 mb-20 py-20 px-10 " id='contact'>
+            <div className=" mb-20 py-20 w-[80%] mx-auto " id='contact'>
                   <TextOverlay backgoundText={'Contact'} overlayText={'Get In Touch'}></TextOverlay>
 
                   <section className="flex flex-col-reverse md:flex-row gap-12">
