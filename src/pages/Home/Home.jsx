@@ -5,10 +5,14 @@ import Do from './Do';
 import TextOverlay from '../../componets/TextOverlay';
 import MyWork from './MyWork';
 import Resume from './Resume';
+import Contact from './Contact';
+import Footer from './Footer';
+
 
 const Home = () => {
       return (
-            <div >
+            <div  >
+                  
                   <Banner></Banner>
 
                   <About></About>
@@ -22,6 +26,9 @@ const Home = () => {
                         <MyWork></MyWork>
 
                   </div>
+
+                  <Contact></Contact>
+                  <Footer></Footer>
 
 
             </div>
