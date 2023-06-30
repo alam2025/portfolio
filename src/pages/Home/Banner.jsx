@@ -35,9 +35,9 @@ const Banner = () => {
                                                                         const key = `${i}`;
                                                                         return (
                                                                               <span
-                                                                                    className=' text-3xl font-bold text-white underline'
+                                                                                    className=' text-4xl font-bold text-white underline'
                                                                                     key={key}
-                                                                                    style={i % 2 === 0 ? { color: 'magenta' } : {}}
+                                                                                    // style={i % 2 === 0 ? { color: 'magenta' } : {}}
                                                                               >{char}</span>
                                                                         );
                                                                   })}

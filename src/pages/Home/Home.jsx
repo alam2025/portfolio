@@ -8,6 +8,8 @@ import Resume from './Resume';
 import Contact from './Contact';
 import Footer from './Footer';
 import SocialSection from './SocialSection';
+import Skills from './Skills/Skills';
+import Projects from './Projects/Projects';
 
 
 const Home = () => {
@@ -18,6 +20,9 @@ const Home = () => {
                   <SocialSection></SocialSection>
 
                   <About></About>
+                  <Skills></Skills>
+
+                  <Projects/>
 
 
                   <Do></Do>
