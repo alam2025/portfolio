@@ -12,10 +12,9 @@ function Header() {
       <li><Link to='home' spy={true} smooth={true} offset={50} duration={1000} delay={200}>Home</Link> </li>
       <li><Link to="about" spy={true} smooth={true} offset={50} duration={1000} delay={200}>About</Link> </li>
       <li><Link to="skills" spy={true} smooth={true} offset={50} duration={1000} delay={200}>Skills</Link> </li>
-      <li><Link spy={true} smooth={true} offset={50} duration={1000} delay={200}>What I Do</Link> </li>
-      <li><Link spy={true} smooth={true} offset={50} duration={1000} delay={200}>Resume</Link> </li>
-      <li><Link spy={true} smooth={true} offset={50} duration={1000} delay={200}>Portfolio</Link> </li>
-      <li><Link spy={true} smooth={true} offset={50} duration={1000} delay={200}>Testimonials</Link> </li>
+      
+      <li><Link to='portfolio' spy={true} smooth={true} offset={50} duration={1000} delay={200}>Portfolio</Link> </li>
+      
       <li><Link to='contact' spy={true} smooth={true} offset={50} duration={1000} delay={200}>Contact</Link> </li>
       </>
 

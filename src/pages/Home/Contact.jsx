@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import TextOverlay from '../../componets/TextOverlay';
-import { useForm } from 'react-hook-form';
+
+
 import {
       FaCloudShowersHeavy,
       FaFacebook,
@@ -8,17 +9,35 @@ import {
       FaLinkedin,
       FaTwitter,
 } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
+import { Toaster, toast } from 'react-hot-toast';
+
+
 
 const Contact = () => {
-      const { register, handleSubmit } = useForm();
+      const form = useRef();
 
-      const onSubmit = (data) => {
-            console.log(data);
+
+      const handleSubmit = (e) => {
+            e.preventDefault()
+            emailjs.sendForm('service_rmva3f4', 'template_y899v7h', form.current, 'x4r9ikATeq1OlKFMv')
+                  .then((result) => {
+                        
+                        
+                        e.target.reset()
+                        toast.success("Your Message successfully sent.")
+                  }, (error) => {
+                        toast.error(error.text)
+                       
+                  });
+
       };
 
       return (
-            <div className=" mb-20 py-20 w-[80%] mx-auto " id='contact'>
+            <div className="  py-20 w-[80%] mx-auto " id='contact'>
                   <TextOverlay backgoundText={'Contact'} overlayText={'Get In Touch'}></TextOverlay>
+
+                  <Toaster></Toaster>
 
                   <section className="flex flex-col-reverse md:flex-row gap-12">
                         <div>
@@ -76,14 +95,14 @@ const Contact = () => {
                         </div>
                         <div className=" w-full ">
                               <h1 className="text-3xl font-bold mb-6">Send Us a Note</h1>
-                              <form onSubmit={handleSubmit(onSubmit)} className="max-w-full mx-auto">
+                              <form ref={form} onSubmit={handleSubmit} className="max-w-full mx-auto">
                                     <div className="grid grid-cols-2 gap-4">
                                           <div>
                                                 <label className="block mb-2">Name</label>
                                                 <input
                                                       type="text"
-                                                      className="w-full px-4 py-2 border border-gray-300 rounded-md"
-                                                      {...register('name')}
+                                                      className="w-full px-4 py-2 border border-gray-300 text-black rounded-md"
+                                                      name='user_name'
                                                       placeholder='Name'
                                                 />
                                           </div>
@@ -91,8 +110,8 @@ const Contact = () => {
                                                 <label className="block mb-2">Email</label>
                                                 <input
                                                       type="email"
-                                                      className="w-full px-4 py-2 border border-gray-300 rounded-md"
-                                                      {...register('email')}
+                                                      className="w-full text-black px-4 py-2 border border-gray-300 rounded-md"
+                                                      name='user_email'
                                                       placeholder='Email'
                                                 />
                                           </div>
@@ -101,9 +120,9 @@ const Contact = () => {
                                     <div className="mt-4">
                                           <label className="block mb-2">Message</label>
                                           <textarea
-                                                className="w-full px-4 py-2 border border-gray-300 rounded-md"
+                                                className="w-full text-black px-4 py-2 border border-gray-300 rounded-md"
                                                 rows="4"
-                                                {...register('message')}
+                                                name='message'
                                                 placeholder='Tell me , How can I help you?'
                                           ></textarea>
                                     </div>

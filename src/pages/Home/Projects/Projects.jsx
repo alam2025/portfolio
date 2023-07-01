@@ -5,6 +5,7 @@ import toy from '../../../assets/projects/toy.png'
 import dragon from '../../../assets/projects/dragon_delights.png'
 import food_hub from '../../../assets/projects/food-hub.png'
 import job_seeker from '../../../assets/projects/job_seeker.png'
+import nextPage from '../../../assets/projects/nextPage.png'
 
 import Project from './Project';
 
@@ -82,12 +83,28 @@ const Projects = () => {
                   liveUrl: 'https://food-hub-bd.web.app/',
                   git_client: 'https://github.com/alam2025/job-seeker',
                   
-                  technology: ' JavaScript,Tailwind Css, Html5, CSS3',
+                  technology: ' JavaScript,Tailwind Css, Html5, CSS3, firebase',
                   features: [
                         '1. User can apply jobs.',
                         '2. Sweet alert used for notification',
                         '3. Smooth Scroll used .',
                         '4. Recharts used to show assignment mark',
+                       
+                  ]
+            },
+            {
+                  id: 6,
+                  name: 'NextPage (a bookshop)',
+                  img: nextPage,
+                  liveUrl: 'https://nimble-douhua-3eb7ad.netlify.app/',
+                  git_client: 'https://github.com/alam2025/nextPage',
+                  
+                  technology: ' JavaScript,Tailwind Css, Html5, CSS3, netlify',
+                  features: [
+                        '1. In Home page Show a banner with Animation.',
+                        '2. Book page display all books',
+                        '3. When click on buy now redirect to the main site.',
+                        
                        
                   ]
             }
@@ -96,7 +113,7 @@ const Projects = () => {
 
 
       return (
-            <div className='mt-16 w-[80%] mx-auto'>
+            <div id='portfolio' className='mt-16 w-[80%] mx-auto'>
                   <TextOverlay backgoundText={'Portfolio'} overlayText={'Projects'} />
 
                   <section className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>

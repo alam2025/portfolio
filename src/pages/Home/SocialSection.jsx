@@ -16,62 +16,64 @@ const SocialSection = () => {
       return (
 
             <div className="fixed flex flex-col   z-10 top-[40%] w-[60px] ">
-                  <Fade top duration={5000} delay={1000}>
-                        <button
+                  <Fade top duration={1000} delay={1000}>
+                        <button 
                               className="flex  items-center justify-center text-white rounded-lg  border-0 "
                               onMouseEnter={() => handleMouseEnter('facebook')}
                               onMouseLeave={handleMouseLeave}
                         >
-                              <span
+                              <a href='https://web.facebook.com/alam2025.bd/' target='_blank'
                                     className={`${hoveredButton === 'facebook' ? 'ml-24' : '-ml-32'
-                                          } px-4 py-6 rounded-md bg-btn overflow-x-visible h-[40px] flex items-center transition-all duration-1000 gap-4`}
+                                          } px-4 py-4 rounded-md bg-btn overflow-x-visible h-[40px] flex items-center transition-all duration-500 gap-4`}
                               >
-                                    <span className="mr-3 text-xl">Facebook</span> <BsFacebook size={35} />
-                              </span>
+                                    <span className="mr-3 text-xl">Facebook</span> <BsFacebook size={25} />
+                              </a>
                         </button>
                   </Fade>
 
-                  <Fade left duration={5000} delay={1000}>
-                        <button
+                  <Fade left duration={1000} delay={1000}>
+                        <button 
                               className="flex items-center justify-center text-white rounded-lg "
                               onMouseEnter={() => handleMouseEnter('mail')}
                               onMouseLeave={handleMouseLeave}
                         >
-                              <span
+                              <a
+                              href='mailto:alam13100852@gmail.com' target='_blank'
                                     className={`${hoveredButton === 'mail' ? ' ml-20' : '-ml-20'
-                                          } shadow-lg px-4 py-6 rounded-md bg-btn overflow-x-visible h-[40px] flex items-center transition-all duration-1000 gap-4`}
+                                          } shadow-lg px-4 py-4 rounded-md bg-btn overflow-x-visible h-[40px] flex items-center transition-all duration-500 gap-4`}
                               >
-                                    <span className="mr-3 text-xl">Mail</span> <AiOutlineMail size={35} />
-                              </span>
+                                    <span className="mr-3 text-xl">Mail</span> <AiOutlineMail size={25} />
+                              </a>
                         </button>
                   </Fade>
 
-                  <Fade right duration={5000} delay={1000}>
+                  <Fade right duration={1000} delay={1000}>
                         <button
                               className="flex items-center justify-center text-white rounded-lg "
                               onMouseEnter={() => handleMouseEnter('linkedin')}
                               onMouseLeave={handleMouseLeave}
                         >
-                              <span
+                              <a
+                              href='https://www.linkedin.com/in/alam-hossain-195b11200/' target='_blank'
                                     className={`${hoveredButton === 'linkedin' ? 'ml-24' : '-ml-28'
-                                          } shadow-lg px-4 py-6 rounded-md bg-btn overflow-x-visible h-[40px] flex items-center transition-all duration-1000 gap-4`}
+                                          } shadow-lg px-4 py-4 rounded-md bg-btn overflow-x-visible h-[40px] flex items-center transition-all duration-500 gap-4`}
                               >
-                                    <span className="mr-3 text-xl">Linkedin</span> <BsLinkedin size={35} />
-                              </span>
+                                    <span className="mr-3 text-xl">Linkedin</span> <BsLinkedin size={25} />
+                              </a>
                         </button>
                   </Fade>
-                  <Fade bottom duration={5000} delay={1000}>
+                  <Fade bottom duration={1000} delay={1000}>
                         <button
                               className="flex items-center justify-center text-white rounded-lg "
                               onMouseEnter={() => handleMouseEnter('github')}
                               onMouseLeave={handleMouseLeave}
                         >
-                              <span
+                              <a href='https://github.com/alam2025' target='_blank'
                                     className={`${hoveredButton === 'github' ? 'ml-24' : '-ml-24'
-                                          } shadow-lg px-4 py-6 rounded-md bg-btn overflow-x-visible h-[40px] flex items-center transition-all duration-1000 gap-3`}
+                                          } shadow-lg px-4 py-4 rounded-md bg-btn overflow-x-visible h-[40px] flex items-center transition-all duration-500 gap-3`}
                               >
-                                    <span className="mr-3 text-xl">GitHub</span> <BsGithub size={35} />
-                              </span>
+                                    <span className="mr-3 text-xl">GitHub</span> <BsGithub size={25} />
+                              </a>
                         </button>
                   </Fade>
 

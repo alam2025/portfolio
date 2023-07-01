@@ -19,7 +19,7 @@ const Project = ({ info }) => {
       return (
             <div>
                   <div className={'p-6 shadow-2xl hover:bg-gray-900 rounded-md'}>
-                        <div className="h-[300px] overflow-y-auto">
+                        <div className="h-[200px] overflow-y-auto">
                               <img className="rounded-md" src={img} alt="" />
                         </div>
                         <div className="mt-6">

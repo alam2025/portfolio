@@ -13,7 +13,7 @@ const Banner = () => {
             window.open(resume, "_blank");
             const link = document.createElement('a');
             link.href = resume;
-            link.download = 'alam_Resume.pdf';
+            link.download = 'Alam_Resume.pdf';
             link.click();
       }
       return (
@@ -55,9 +55,11 @@ const Banner = () => {
 
                         </div>
                        <Fade bottom delay={500} duration={2000}>
-                       <div className=' flex gap-4 mt-80'>
-                              <button onClick={handleHire} className="mt-5 btn  btn-secondary rounded-full px-10 text-emerald-400 font-bold text-xl border-4 hover:btn-info  ">Hire Me</button>
-                              <button onClick={handleResume} className="mt-5 btn rounded-full px-10 text-emerald-400 font-bold text-xl border-4 hover:btn-info btn-outline ">Download Resume</button>
+                       <div className=' flex flex-col md:flex-row gap-4 mt-80'>
+                              <button onClick={handleHire} className="btn  btn-secondary rounded-full px-10 text-emerald-400 font-bold text-xl border-4 hover:btn-info  ">Hire Me</button>
+
+                              <button onClick={handleResume} className=" btn rounded-full text-emerald-400 font-bold text-xl border-4 hover:btn-info btn-outline ">Download Resume</button>
+
                         </div>
                        </Fade>
                   </div>
