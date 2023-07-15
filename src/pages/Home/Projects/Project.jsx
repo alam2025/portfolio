@@ -20,7 +20,7 @@ const Project = ({ info }) => {
             <div>
                   <div className={'p-6 shadow-2xl hover:bg-gray-900 rounded-md'}>
                         <div className="h-[200px] overflow-y-auto">
-                              <img className="rounded-md" src={img} alt="" />
+                              <img className="rounded-md hover:overscroll-x-auto" src={img} alt="" />
                         </div>
                         <div className="mt-6">
                               <h2 className="text-xl">{name}</h2>

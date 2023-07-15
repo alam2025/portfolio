@@ -38,7 +38,7 @@ const SocialSection = () => {
                               onMouseLeave={handleMouseLeave}
                         >
                               <a
-                              href='mailto:alam13100852@gmail.com' target='_blank'
+                              href='mailto:dev.alam886@gmail.com' target='_blank'
                                     className={`${hoveredButton === 'mail' ? ' ml-20' : '-ml-20'
                                           } shadow-lg px-4 py-4 rounded-md bg-btn overflow-x-visible h-[40px] flex items-center transition-all duration-500 gap-4`}
                               >

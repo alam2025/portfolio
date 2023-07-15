@@ -6,6 +6,7 @@ import dragon from '../../../assets/projects/dragon_delights.png'
 import food_hub from '../../../assets/projects/food-hub.png'
 import job_seeker from '../../../assets/projects/job_seeker.png'
 import nextPage from '../../../assets/projects/nextPage.png'
+import fidelity from '../../../assets/projects/fidelity tradding.png'
 
 import Project from './Project';
 
@@ -104,6 +105,23 @@ const Projects = () => {
                         '1. In Home page Show a banner with Animation.',
                         '2. Book page display all books',
                         '3. When click on buy now redirect to the main site.',
+                        
+                       
+                  ]
+            },
+            {
+                  id: 7,
+                  name: 'Fidelity Trading (a trading Website)',
+                  img: fidelity,
+                  liveUrl: 'https://www.luxwire-investment.online/',
+                  git_client: 'https://github.com/alam2025/fidelity-trading/tree/main',
+                  
+                  technology: 'HTML, Vanilla CSS, PHP, JavaScript, Smarty Templete,Jquery',
+                  features: [
+                        '1. In Home page Show a banner , plans and features',
+                        '2. Responsive Navbar',
+                        '3. User Dashboard',
+                        '4. Authentication system more Secure'
                         
                        
                   ]

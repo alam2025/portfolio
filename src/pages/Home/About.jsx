@@ -1,7 +1,7 @@
 import React from 'react';
 import about from '../../assets/About.png'
 import TextOverlay from '../../componets/TextOverlay';
-import resume from '../../assets/Alam Resume Web Developer (1).pdf'
+import resume from '../../assets/Alam Hossain-Resume.pdf'
 import { Fade } from 'react-reveal';
 const About = () => {
       const handleDownload = () => {
@@ -26,16 +26,16 @@ const About = () => {
                                     <div>
                                           <p>I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                           <br />
-                                          <p>Delivering work within time and budget which meets client’s requirements is our moto. Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley.</p>
+                                          <p>Delivering work within time and budget which meets client’s requirements is our moto. </p>
                                     </div>
                               </Fade>
                         </div>
                        <Fade right duration={2000}>
                        <div className=' divide-y-2 space-y-5 '>
                               <h1><span className='  font-semibold'>Name </span>: Alam Hossain</h1>
-                              <h1><span className=' font-semibold'>Email :</span> <a href="mailto:alam13100852@gmail.com">alam13100852@gmail.com</a></h1>
+                              <h1><span className=' font-semibold'>Email :</span> <a href="mailto:dev.alam886@gmail.com">dev.alam886@gmail.com</a></h1>
                               <h1><span className=' font-semibold'>Age :</span> 24</h1>
-                              <h1><span className=' font-semibold'>From : </span> Jamalpur, Mymensingh, Bangladesh</h1>
+                              <h1><span className=' font-semibold'>From : </span> Jamalpur, Bangladesh</h1>
 
                               <button onClick={handleDownload} className=' btn btn-info text-white rounded-full hover:bg-teal-700'>Download Resume</button>
 

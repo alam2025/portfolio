@@ -46,21 +46,21 @@ const Contact = () => {
                               <div className="my-6">
                                     <p>+880 1925375672</p>
                                     <p>
-                                          <a href="mailto:alam13100852@gmail.com">alam13100852@gmail.com</a>
+                                          <a href="mailto:dev.alam886@gmail.com">dev.alam886@gmail.com</a>
                                     </p>
                               </div>
                               <h1 className="text-xl font-semibold uppercase">Follow Me</h1>
                               <div className="flex gap-6 my-5">
                                     <div className="relative group">
-                                          <a href="#">
+                                          <a href="https://web.facebook.com/alam2025.bd/">
                                                 <FaFacebook size={20} />
                                           </a>
                                           <div className="absolute hidden group-hover:block bg-gray-800 text-white text-xs px-2 py-1 rounded mt-2">
                                                 Facebook
                                           </div>
                                     </div>
-                                    <div className="relative group">
-                                          <a href="#">
+                                    <div  className="relative group">
+                                          <a href="https://web.facebook.com/alam2025.bd/">
                                                 <FaGithub size={20} />
                                           </a>
                                           <div className="absolute hidden group-hover:block bg-gray-800 text-white text-xs px-2 py-1 rounded mt-2">
@@ -68,21 +68,14 @@ const Contact = () => {
                                           </div>
                                     </div>
                                     <div className="relative group">
-                                          <a href="#">
+                                          <a href="https://www.linkedin.com/in/alam-hossain-195b11200/">
                                                 <FaLinkedin size={20} />
                                           </a>
                                           <div className="absolute hidden group-hover:block bg-gray-800 text-white text-xs px-2 py-1 rounded mt-2">
                                                 LinkedIn
                                           </div>
                                     </div>
-                                    <div className="relative group">
-                                          <a href="#">
-                                                <FaTwitter size={20} />
-                                          </a>
-                                          <div className="absolute hidden group-hover:block bg-gray-800 text-white text-xs px-2 py-1 rounded mt-2">
-                                                Twitter
-                                          </div>
-                                    </div>
+                                    
                                     <div className="relative group">
                                           <a href="#">
                                                 <FaCloudShowersHeavy size={20} />

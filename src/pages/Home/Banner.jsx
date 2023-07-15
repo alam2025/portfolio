@@ -1,7 +1,7 @@
 import React from 'react';
 import banner_img from '../../assets/dev.jpg'
 import ReactTypingEffect from 'react-typing-effect';
-import resume from '../../assets/Alam Resume Web Developer (1).pdf'
+import resume from '../../assets/Alam Hossain-Resume.pdf'
 import { Fade } from 'react-reveal';
 const Banner = () => {
       const handleHire = () => {
