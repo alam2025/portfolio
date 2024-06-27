@@ -2,15 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.active{
+.active {
   color: rgb(11, 203, 69);
   background-color: transparent;
   text-decoration: underline;
-  
 }
 
-.bg-btn{
-  @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+.bg-btn {
+  @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
 }
 
-
+.container {
+  @apply w-[95%] md:w-[90%] lg:w-[85%] xl:w-[1200px] 2xl:w-[1230px] mx-auto;
+}
+canvas {
+  position: relative !important ;
+  height: 200px !important;
+}

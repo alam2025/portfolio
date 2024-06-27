@@ -1,147 +1,72 @@
-import React, { useState } from 'react';
-import TextOverlay from '../../../componets/TextOverlay';
-import language from '../../../assets/projects/language.png'
-import toy from '../../../assets/projects/toy.png'
-import dragon from '../../../assets/projects/dragon_delights.png'
-import food_hub from '../../../assets/projects/food-hub.png'
-import job_seeker from '../../../assets/projects/job_seeker.png'
-import nextPage from '../../../assets/projects/nextPage.png'
-import fidelity from '../../../assets/projects/fidelity tradding.png'
+import React, { useState } from "react";
+import TextOverlay from "../../../componets/TextOverlay";
 
-import Project from './Project';
-
+import Project from "./Project";
 
 const Projects = () => {
-      const infos = [
-            {
-                  id: 1,
-                  name: 'Online Language Learning School',
-                  img: language,
-                  liveUrl: 'https://language-learning-school-83352.web.app/',
-                  git_client: 'https://github.com/alam2025/Language-learning-school-client',
-                  git_server: 'https://github.com/alam2025/language-learning-school-server',
-                  technology: 'React.js, JavaScript, Express js, Node js, Tailwind css, Firebase , MongoDB, Vercel',
-                  features: [
-                        '1. Firebase Authentication for login and logout system.',
-                        '2. Payment system used as Stripe',
-                        '3.  Admin Can Add user role as instructor or admin.',
-                        '4. Instructor can add a class and update class',
-                        '5. Student Select a class and also erroll after paid payment.'
-                  ]
-            },
-            {
-                  id: 2,
-                  name: 'Online Toy Marketplace',
-                  img: toy,
-                  liveUrl: 'https://toy-car-land.web.app/',
-                  git_client: 'https://github.com/alam2025/toy-car-lan-client',
-                  git_server: 'https://github.com/alam2025/toy-car-land-server',
-                  technology: 'React.js, Express js, Node js, Tailwind css, Firebase , MongoDB, Vercel,Html5',
-                  features: [
-                        '1. Firebase Authentication for login and logout system.',
-                        '2. User can view details about toy after click on view details button.',
-                        '3. Shows toys on the home page based on Category.',
+  const infos = [
+    {
+      id: 1,
+      name: "NSRIC International School (Nuxt.js saas website)",
+      img: "https://i.ibb.co/PQVh2sJ/Fire-Shot-Capture-123-web-nistonline-ca.png",
+      liveUrl: "https://web.nistonline.ca/",
 
+      technology: "NuxtJS, Tailwind CSS , Pinia, Headless UI, Nuxt Image",
+      features:
+        "NSRIC International School is a saas website that serve campus to any school or institutions.You can easily maintains your school using this website. It’s dynamic roles and interfaces like student, parent, instructor,admin, partner etc .",
+    },
+    {
+      id: 2,
+      name: "CoinCompare (NUXT project)",
+      img: "https://i.ibb.co/rvpxY1f/Fire-Shot-Capture-127-Coincompare-net-Compare-cryptos-save-on-fees-coincompare-net.png",
+      liveUrl: "https://coincompare.net/",
 
-                  ]
-            },
-            {
-                  id: 3,
-                  name: 'Dragon Delights online food Restaurant',
-                  img: dragon,
-                  liveUrl: 'https://dragon-delights.web.app/',
-                  git_client: 'https://github.com/alam2025/Dragon_Delights_Client',
-                  git_server: 'https://github.com/alam2025/dragons-delights-server',
-                  technology: 'React.js, JavaScript, Express js, Node js, Tailwind css, Firebase , MongoDB, Vercel',
-                  features: [
-                        '1. Firebase Authentication for login and logout system.',
-                        '2. Popular user and chef are displayed on Home page',
-                        '3. Favourite page and Details page are private.',
-                        '4. User can added Recipe in his Favouite page',
-                       
-                  ]
-            },
-            {
-                  id: 4,
-                  name: 'Food Hub BD online Food Market',
-                  img: food_hub,
-                  liveUrl: 'https://food-hub-bd.web.app/',
-                  git_client: 'https://github.com/alam2025/food-hub-bd-client',
-                  git_server: 'https://github.com/alam2025/food-hub-bd-server',
-                  technology: 'React.js, JavaScript, Express js, Node js, Bootstrap, React Bootstrap, Firebase , MongoDB, Vercel',
-                  features: [
-                        '1. Firebase Authentication for login and logout system.',
-                        '2. Popular user and chef are displayed on Home page',
-                        '3. Favourite page and Details page are private.',
-                        '4. User can added Recipe in his Favouite page',
-                       
-                  ]
-            },
-            {
-                  id: 5,
-                  name: 'Job Seeker (Online Job Market)',
-                  img: job_seeker,
-                  liveUrl: 'https://food-hub-bd.web.app/',
-                  git_client: 'https://github.com/alam2025/job-seeker',
-                  
-                  technology: ' JavaScript,Tailwind Css, Html5, CSS3, firebase',
-                  features: [
-                        '1. User can apply jobs.',
-                        '2. Sweet alert used for notification',
-                        '3. Smooth Scroll used .',
-                        '4. Recharts used to show assignment mark',
-                       
-                  ]
-            },
-            {
-                  id: 6,
-                  name: 'NextPage (a bookshop)',
-                  img: nextPage,
-                  liveUrl: 'https://nimble-douhua-3eb7ad.netlify.app/',
-                  git_client: 'https://github.com/alam2025/nextPage',
-                  
-                  technology: ' JavaScript,Tailwind Css, Html5, CSS3, netlify',
-                  features: [
-                        '1. In Home page Show a banner with Animation.',
-                        '2. Book page display all books',
-                        '3. When click on buy now redirect to the main site.',
-                        
-                       
-                  ]
-            },
-            {
-                  id: 7,
-                  name: 'Fidelity Trading (a trading Website)',
-                  img: fidelity,
-                  liveUrl: 'https://www.luxwire-investment.online/',
-                  git_client: 'https://github.com/alam2025/fidelity-trading/tree/main',
-                  
-                  technology: 'HTML, Vanilla CSS, PHP, JavaScript, Smarty Templete,Jquery',
-                  features: [
-                        '1. In Home page Show a banner , plans and features',
-                        '2. Responsive Navbar',
-                        '3. User Dashboard',
-                        '4. Authentication system more Secure'
-                        
-                       
-                  ]
-            }
-      ]
+      technology: "NuxtJS, Tailwind CSS, Pinia, Nuxt Image,NodeJS",
+      features: "",
+    },
+    {
+      id: 3,
+      name: "NsricVisa (Vue.js visa consultant website)",
+      img: "https://i.ibb.co/pKCFMqv/Fire-Shot-Capture-125-NSRIC-VISA-nsricvisa-ca.png",
+      liveUrl: "https://nsricvisa.ca/",
 
+      technology: "VueJS, VueX, Tailwind CSS, Vite, Vue router",
+      features:
+        "NsricVisa is a visa consultant website where users easily get visa using this website. It has more roles client ,gent and admin. Have different interface likes for user view, client dashboard, agent and admin dashboard.",
+    },
+    {
+      id: 4,
+      name: "Ya-sin (ReactJS masjid management website)",
+      img: "https://i.ibb.co/GxpWPSK/Fire-Shot-Capture-129-YA-SIN-www-ya-sin-app.png",
+      liveUrl: "https://www.ya-sin.app/",
 
+      technology:
+        "React.js, Mysql, Tailwind CSS, Daisy UI , AXIOS, React Query, Custom Hooks etc",
+      features:
+        "Ya-sin is a masjid management website. Here masjid authority can register their masjid in ya-sin then user can subscribe this masjid like a page in Facebook. Then all info that is provided from this masjid it’s subscriber notify via email, SMS or notification. Each masjid admin can select template to show in his masjid profile. It has a lots of feature like salat time info, calendar,event, announcement, member, services etc.",
+    },
 
-      return (
-            <div id='portfolio' className='mt-16 w-[80%] mx-auto'>
-                  <TextOverlay backgoundText={'Portfolio'} overlayText={'Projects'} />
+    {
+      id: 6,
+      name: "NextPage (a bookshop)",
+      img: "https://i.ibb.co/YRRNfs9/Fire-Shot-Capture-130-next-Page-nimble-douhua-3eb7ad-netlify-app.png",
+      liveUrl: "https://nimble-douhua-3eb7ad.netlify.app/",
 
-                  <section className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-                        {
-                             infos.map(info=><Project key={info.id} info={info}  >
+      technology: " JavaScript,Tailwind Css, Html5, CSS3, netlify",
+      features: "",
+    },
+  ];
 
-                              </Project>)
-                        }
-                        
-                        {/* <div>
+  return (
+    <div id="portfolio" className="mt-16 container">
+      <TextOverlay backgoundText={"Portfolio"} overlayText={"Projects"} />
+
+      <section className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {infos.map((info) => (
+          <Project key={info.id} info={info}></Project>
+        ))}
+
+        {/* <div>
                               <div className={' p-6 shadow-2xl hover:bg-gray-900 rounded-md '}>
                                     <div className=' h-[300px] overflow-y-auto '>
                                           <img className=' rounded-md' src={dragon} alt="" />
@@ -161,7 +86,7 @@ const Projects = () => {
                                                             <p className="py-4">Press ESC key or click the button below to close</p>
                                                             <div className="modal-action">
                                                                   {/* if there is a button in form, it will close the modal */}
-                                                                  {/* <button className="btn">Close</button>
+        {/* <button className="btn">Close</button>
                                                             </div>
                                                       </form>
                                                 </dialog>
@@ -170,23 +95,11 @@ const Projects = () => {
                                     </div>
                                     
                               </div>
-                        </div> */ }
-                        {/* <Project language={language}></Project> */}
-
-
-
-
-                  </section>
-
-
-
-
-
-
-
-
-            </div>
-      );
+                        </div> */}
+        {/* <Project language={language}></Project> */}
+      </section>
+    </div>
+  );
 };
 
 export default Projects;
